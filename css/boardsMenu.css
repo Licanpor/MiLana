@@ -111,4 +111,11 @@ div.card-content{
   div.card-content h5{
   font-size: 3rem;
   }
+
+@media (min-width: 701px){
+
+  img.oxxo{
+    width: 30%;
+  }
+
 }
