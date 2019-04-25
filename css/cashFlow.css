@@ -1,0 +1,42 @@
+#cashFlow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.cashFlow_dashboard .input_balance {
+	width: 60%;
+	margin: 2rem auto;
+}
+
+.cashFlow-expenses {
+	width: 80%;
+	height: 60vh;
+	margin: 3rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.cashFlow-expenses a{
+	display: block;
+	width: 10rem;
+	height: 10rem;
+	margin: 1.5rem;
+}
+
+.cashFlow-expenses a img {
+	width: 80%;
+}
+.cashFlow-expenses .expenses_icon_wrapper {
+	border: 0.3rem solid #08b2e3;
+	border-radius: 50%;
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
