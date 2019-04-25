@@ -10,32 +10,46 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900" rel="stylesheet">
 	<!-- css -->
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/savings.css">
-	<title>Ahorro</title>
+	<link rel="stylesheet" href="../css/tandas.css">
+	<title>Tandas</title>
 </head>
 <body>
-<div id="savings">
-	<h3>AHORRO</h3>
-	<div class="total_savings">
-		<h3>$ 2,000</h3>
-		<h6>Total</h6>
-	</div>
-	<div class="saving_preview">
-		<h4>Lavadora - </h4>
-		<h4>$ 1,200</h4>
-		<a href="#!"><img src="../assets/icons/settings-icon.png" alt="Settings"></a>
-	</div>
-	<div class="saving_preview">
-		<h4>Escuela Sam - </h4>
-		<h4>$ 800</h4>
-		<a href="#!"><img src="../assets/icons/settings-icon.png" alt="Settings"></a>
-	</div>
-	<a href="#!" class="new_saving">
-		<div>
-			<h1>+</h1>
+<div id="tandas">
+	<h3>Tandas</h3>
+	<div class="tanda_type">
+		<h4>Mis Tandas</h4>
+		<div class="tanda_preview">
+			<div class="img_wrapper">
+				<img src="../assets/icons/woman-icon.png" alt="">
+			</div>
+			<div class="tanda_details">
+				<p>$ 3,000</p>
+				<p>$ 500 mensual</p>
+				<p>26/04/19 <span>-</span> 26/10/19</p>
+				<p># 5</p>
+			</div>
+			<img src="../assets/icons/arrow-next.png" alt="">
 		</div>
-		<h4>Nuevo Ahorro</h4>
-	</a>
+	</div>
+	<div class="tanda_type">
+		<h4>Con mis cuates</h4>
+		<div class="tanda_preview">
+			<div class="img_wrapper">
+				<img src="../assets/icons/profile.png" alt="">
+			</div>
+			<div class="tanda_details">
+				<p>$ 1,000</p>
+				<p>$ 200 mensual</p>
+				<p>11/05/19 <span>-</span> 11/06/19</p>
+				<p># 3</p>
+			</div>
+			<img src="../assets/icons/arrow-next.png" alt="">
+		</div>
+	</div>
+	<div class="cta_wrapper">
+		<a href="#!"><p>Crear</p></a>
+		<a href="#!"><p>Entrarle</p></a>
+	</div>
 </div>
 <div id="mobile-menu">
 	<a href="../views/challenges_board.html">
@@ -51,9 +65,12 @@
 		<img src="../assets/icons/profile-icon.png" alt="Perfil">
 	</a>
 </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="../js/savings
-.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+		M.AutoInit();
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+<script src="../js/tandas.js"></script>
 </body>
 </html>
