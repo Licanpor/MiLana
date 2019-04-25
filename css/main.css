@@ -3,6 +3,37 @@ html {
 	font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
+div.title{
+	background-color:  #4dd0e1;
+	width: 100%;
+}
+
+div.title p{
+	color: white;
+	font-size: bolder;
+	margin-left: 10%;
+	font-size: 2rem;
+}
+
+nav ul a{
+	font-size: 1.8rem;
+}
+
+div.links-footer ul>li>a{
+	font-size: 1.3rem;
+	margin: .5rem;
+}
+
+
+div.footer-copyright{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+ul#socialMedia img{
+  margin-right: 5rem;
+}
+
 #mobile-menu {
 	background-color: #1a237e;
 	width: 100%;

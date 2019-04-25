@@ -1,0 +1,39 @@
+
+div.panel-comp img{
+  width: 13rem;
+  border: 0.3rem solid #08b2e3;
+	border-radius: 50%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1.4rem;
+}
+
+div.panel-comp img:hover{
+  -webkit-transform: scale(1.1);
+   transform: scale(1.1)
+}
+
+div.profile img{
+  width: 5rem;
+  border-radius: 100%;
+  border: 2px solid #29B6F6;
+  text-align: center;
+  padding: .2rem;
+}
+
+div#profileTop div{
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media (min-width: 701px) {
+div#mobile-menu{
+  display: none;
+}
+
+div.panel-comp img{
+  width: 15rem;
+  margin: 5rem 4rem 7rem 4rem;
+}
+
+}
