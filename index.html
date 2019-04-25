@@ -11,20 +11,37 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/main.css">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/images/icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
   <title>MiLana</title>
 </head>
 <body>
   <header >
     <nav class="indigo darken-4" >
-    <div class="nav-wrapper container ">
-      <a href="index.html" class="brand-logo"><img class="logo-nav" src="assets/images/logo-rosa.png" alt=""></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">RETOS</a></li>
-        <li><a href="badges.html">PREMIOS</a></li>
-        <li><a href="">CONSEJOS</a></li>
-        <li><a href=""><i class="medium material-icons">account_circle</i></a></li>
-      </ul>
-    </div>
+			<div class="nav-wrapper container ">
+				<a href="index.html" class="brand-logo"><img class="logo-nav" src="assets/images/logo-rosa.png" alt=""></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="views/challenges_board.html">RETOS</a></li>
+					<li><a href="views/awards_board.html">PREMIOS</a></li>
+					<li><a href="views/tips.html">CONSEJOS</a></li>
+					<li><a href="views/dashboard.html"><i class="medium material-icons">account_circle</i></a></li>
+				</ul>
     </nav>
   </header>
   <div id="login" class="">
@@ -32,7 +49,7 @@
       <img class="sheep" src="assets/images/logo-milana.png" alt="">
     </div>
     <div class="login">
-      <h4>Logeate</h4>
+      <h4>¡Empieza a ahorrar!</h4>
       <div >
         <p>Usuario</p>
         <input  class="login-inp" type="text" name="" value="">
@@ -42,13 +59,33 @@
         <input class="login-inp" type="text" name="" value="">
       </div>
       <p class="login-text">INGRESA CON </p>
-      <img src="assets/facebook.png" alt="">
+      <a href="views/dashboard.html"><img src="assets/facebook.png" alt=""></a>
   </div>
   </div>
   <div class="info-home">
     <div class="container info">
-
+			<h1>MiLana tu consejera financiera</h1>
     </div>
+		<div class="content-icon">
+			<div class="">
+				<div class="icon1">
+					<img src="assets/icons/learn.png" alt="">
+					<p class="process">Aprende a administrar tu dinero</p>
+				</div>
+				<div class="icon1">
+					<img src="assets/icons/prize.png" alt="">
+					<p class="process">Completa retos y gana</p>
+				</div>
+				<div class="icon1">
+					<img src="assets/icons/historial.png" alt="">
+					<p class="process">Genera historial de crédito</p>
+				</div>
+				<div class="icon1">
+					<img src="assets/icons/credit-card.png" alt="">
+					<p class="process">Accede a productos financieros</p>
+				</div>
+			</div>
+		</div>
   </div>
 
   <footer class="page-footer pink darken-2">
@@ -93,6 +130,5 @@ if ("serviceWorker" in navigator) {
 	}
 }
 </script>
-
 </body>
 </html>
