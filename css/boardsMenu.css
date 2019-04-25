@@ -25,7 +25,7 @@ div.title-modal{
 }
 img.sheep-modal{
   width: 30%;
-  margin-left: 45%;
+  margin-left: 15%;
 }
 
 div.text-modal{
@@ -36,4 +36,79 @@ div.text-modal{
 div.modal-footer a{
   color: #c2185b;
   font-weight: bolder;
+}
+
+div.cont-awards{
+  font-size: 1.8rem;
+  font-weight: bolder;
+  padding-bottom: 5rem;
+}
+
+img.awards-img{
+  width: 80%;
+}
+
+a.btn-awards{
+  float: right;
+  bottom: 2rem;
+}
+
+img.sheep-modal, img.saldazo-card{
+  display: inline-block;
+}
+
+img.saldazo-card{
+  width: 50%;
+}
+
+img.oxxo{
+  width: 80%;
+}
+
+div.cont-saldazo{
+  text-align: center;
+}
+
+div.saldazo-folio{
+  text-align: center;
+  margin-top: 2rem;
+}
+span.folio{
+  font-size: 3rem;
+  border-radius: .5rem;
+  border: 2px solid#c2185b;
+  padding: 1rem;
+}
+
+div.steps-sald{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 5rem;
+}
+
+div.card{
+  margin-top: 3rem;
+}
+
+div.card-image img{
+  width: 20%;
+}
+
+div.card-content{
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+
+@media (min-width: 701px){
+  img.oxxo{
+    width: 30%;
+  }
+  div.card-content{
+  font-size: 2rem;
+  }
+  div.card-content h5{
+  font-size: 3rem;
+  }
 }
