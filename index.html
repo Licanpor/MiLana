@@ -114,21 +114,33 @@
          </div>
   </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="js/autentication.js"></script>
 <script type="text/javascript">
-if ("serviceWorker" in navigator) {
-	if (navigator.serviceWorker.controller) {
-		console.log("[PWA Builder] active service worker found, no need to register");
-	} else {
-		// Register the service worker
-		navigator.serviceWorker
-			.register("pwabuilder-sw.js", {
-				scope: "./"
-			})
-			.then(function (reg) {
-				console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-			});
+	if ("serviceWorker" in navigator) {
+		if (navigator.serviceWorker.controller) {
+			console.log("[PWA Builder] active service worker found, no need to register");
+		} else {
+			// Register the service worker
+			navigator.serviceWorker
+				.register("pwabuilder-sw.js", {
+					scope: "./"
+				})
+				.then(function (reg) {
+					console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+				});
+		}
 	}
-}
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCo7lSPR1RtMDEWVnJdyox0CliJCM6p330",
+		authDomain: "facebooklogin-389a7.firebaseapp.com",
+		databaseURL: "https://facebooklogin-389a7.firebaseio.com",
+		projectId: "facebooklogin-389a7",
+		storageBucket: "facebooklogin-389a7.appspot.com",
+		messagingSenderId: "217870186747"
+	};
+	firebase.initializeApp(config);
 </script>
 </body>
 </html>
