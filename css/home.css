@@ -1,20 +1,18 @@
-
-
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
 
-  .logo-nav{
-    width:40%;
-    color: white;
-    margin-top: 1rem;
-  }
+.logo-nav{
+  width:40%;
+  color: white;
+  margin-top: 1rem;
+}
 
 div#login{
   background-color: #c2185b;
@@ -94,20 +92,21 @@ div.icon1 img{
   width: 90%;
 }
 @media (max-width: 700px) {
-header, footer, div.info-home,
-div.login>h4{
-  display: none;
-}
+  header, footer, div.info-home,
+  div.login > h4 {
+    display: none;
+  }
 
-div#login {
+  div#login {
     background-color: #c2185b;
     height: 100vh;
     width: 100%;
     position: none;
     display: block;
 
-}
-div.login {
+  }
+
+  div.login {
     width: 90%;
     height: 80%;
     position: absolute;
@@ -115,11 +114,13 @@ div.login {
     left: 5%;
     border-radius: .5rem;
     padding-top: 50%;
-}
-img.sheep {
+  }
+
+  img.sheep {
     width: 40%;
     position: absolute;
     top: 15%;
     left: 30%;
     z-index: 50;
+  }
 }
