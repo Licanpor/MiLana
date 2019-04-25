@@ -27,9 +27,6 @@ div#profileTop div{
 }
 
 @media (min-width: 701px) {
-div#mobile-menu{
-  display: none;
-}
 
 div.panel-comp img{
   width: 15rem;

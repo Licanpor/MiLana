@@ -3,10 +3,9 @@ html {
 	font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
-
 a {
 	cursor: pointer;
-
+}
 div.title{
 	background-color:  #4dd0e1;
 	width: 100%;
@@ -19,6 +18,10 @@ div.title p{
 	font-size: 2rem;
 }
 
+div.title p, div.title img{
+	display: inline-block;
+}
+
 nav ul a{
 	font-size: 1.8rem;
 }
@@ -29,6 +32,11 @@ div.links-footer ul>li>a{
 }
 
 
+ul#socialMedia img{
+  margin-right: 5rem;
+
+}
+
 div.footer-copyright{
 	font-size: 1.5rem;
 	text-align: center;
@@ -36,8 +44,8 @@ div.footer-copyright{
 
 ul#socialMedia img{
   margin-right: 5rem;
-
 }
+
 
 #mobile-menu {
 	background-color: #1a237e;
@@ -62,8 +70,27 @@ ul#socialMedia img{
 	height: 3.5rem;
 }
 
+div img.sheep-mobile{
+	width: 30%;
+	margin-left: 5%;
+}
+
 @media only screen and (max-width: 600px) {
 	#mobile-menu {
 		display: flex;
+	}
+}
+
+@media (min-width: 701px) {
+	div#mobile-menu{
+	  display: none;
+	}
+
+	div img.sheep-mobile{
+		display: none;
+	}
+	div img.sheep-mobile{
+		width: 30%;
+		margin-left: 5%;
 	}
 }
