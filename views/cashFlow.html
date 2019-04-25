@@ -14,47 +14,91 @@
 	<title>Flujo de Caja</title>
 </head>
 <body>
-<div id="cashFlow">
-	<div class="cashFlow_calendar">
-		<h2 class="current_date"></h2>
+<!--MODALES-->
+<div id="savings_modal" class="modal">
+	<div class="modal-content">
+		<p>Ahorro</p>
+		<input type="number" placeholder="¿Cuánto has gastado?">
 	</div>
-	<div class="cashFlow_dashboard">
-		<h3>TU SALDO</h3>
-		<div class="input_balance">
-			<input type="number" placeholder="  $ 1500.00">
-		</div>
-		<div class="cashFlow-expenses">
-			<a href="#savings_modal">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/savings-icon.png" alt="Ahorro">
-				</div>
-			</a>
-			<a href="#food_modal">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/food-icon.png" alt="Alimentos">
-				</div>
-			</a>
-			<a href="#transport_modal">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/transport-icon.png" alt="Transporte">
-				</div>
-			</a>
-			<a href="#services_modal">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/services-icon.png" alt="Servicios">
-				</div>
-			</a>
-			<a href="#entertainment_modal">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/entertainment-icon.png" alt="Diversión">
-				</div>
-			</a>
-			<a href="#">
-				<div class="expenses_icon_wrapper">
-					<img src="../assets/icons/others-icon.png" alt="Otros">
-				</div>
-			</a>
-		</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Listo!</a>
+	</div>
+</div>
+<div id="food_modal" class="modal">
+	<div class="modal-content">
+		<p>Alimentación</p>
+		<input type="number" placeholder="¿Cuánto has gastado?">
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Listo!</a>
+	</div>
+</div>
+<div id="transport_modal" class="modal">
+	<div class="modal-content">
+		<p>Transporte</p>
+		<input type="number" placeholder="¿Cuánto has gastado?">
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Listo!</a>
+	</div>
+</div>
+<div id="entertainment_modal" class="modal">
+	<div class="modal-content">
+		<p>Diversión</p>
+		<input type="number" placeholder="¿Cuánto has gastado?">
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Listo!</a>
+	</div>
+</div>
+<div id="services_modal" class="modal">
+	<div class="modal-content">
+		<p>Servicios</p>
+		<input type="number" placeholder="¿Cuánto has gastado?">
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">¡Listo!</a>
+	</div>
+</div>
+
+<!--/modales-->
+<div id="cashFlow">
+	<h2 class="current_date"></h2>
+	<h3>TU SALDO</h3>
+	<div class="input_balance">
+		<input type="number" placeholder="  $ 1500.00">
+	</div>
+	<div class="cashFlow-expenses">
+		<a href="#savings_modal" class="waves-effect waves-light modal-trigger">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/savings-icon.png" alt="Ahorro">
+			</div>
+		</a>
+		<a href="#food_modal">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/food-icon.png" alt="Alimentos">
+			</div>
+		</a>
+		<a href="#transport_modal">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/transport-icon.png" alt="Transporte">
+			</div>
+		</a>
+		<a href="#services_modal">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/services-icon.png" alt="Servicios">
+			</div>
+		</a>
+		<a href="#entertainment_modal">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/entertainment-icon.png" alt="Diversión">
+			</div>
+		</a>
+		<a href="#">
+			<div class="expenses_icon_wrapper">
+				<img src="../assets/icons/others-icon.png" alt="Otros">
+			</div>
+		</a>
 	</div>
 </div>
 <div id="mobile-menu">
@@ -71,7 +115,12 @@
 		<img src="../assets/icons/profile-icon.png" alt="Perfil">
 	</a>
 </div>
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+		M.AutoInit();
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script src="../js/cashFlow.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
