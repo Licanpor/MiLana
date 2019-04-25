@@ -24,13 +24,16 @@ div#login{
 }
 
 div.login{
-  background-color:rgba(255, 254, 255, 0.4);
+  background-color:white;
   width: 30%;
   height: 80%;
   position: absolute;
   top: 10%;
   left: 60%;
   border-radius: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 div.login h1{
@@ -40,12 +43,13 @@ div.login h1{
 
 div.login img{
   width: 20%;
-  margin-left: 39%;
 }
 
-div.login div{
-  margin-left: 4rem;
+div.info{
+  font-weight: bolder;
+  text-align: center;
 }
+
 
 input.login-inp{
   width: 70% !important;
@@ -72,6 +76,23 @@ img.sheep{
   text-align: center;
 }
 
+div.content-icon{
+  width: 90%;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+div.icon1{
+  width: 20%;
+  margin-left: 5rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+div.icon1 img{
+  width: 90%;
+}
 @media (max-width: 700px) {
 header, footer, div.info-home,
 div.login>h4{
@@ -87,7 +108,6 @@ div#login {
 
 }
 div.login {
-    background-color: rgba(255, 254, 255, 0.4);
     width: 90%;
     height: 80%;
     position: absolute;
