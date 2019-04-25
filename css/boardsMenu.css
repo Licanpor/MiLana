@@ -1,0 +1,39 @@
+div.content-challenge{
+  padding-bottom: 5rem;
+}
+
+div.content-challenge p{
+  font-size: 1.5rem;
+  padding-top: .5rem;
+}
+
+span.title{
+  color: #c2185b;
+  font-weight: bold;
+}
+.modal .modal-content{
+  padding: 0 !important;
+}
+
+div.title-modal{
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  background-color: #c2185b;
+  margin: 0;
+  padding: 1rem;
+}
+img.sheep-modal{
+  width: 30%;
+  margin-left: 45%;
+}
+
+div.text-modal{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+div.modal-footer a{
+  color: #c2185b;
+  font-weight: bolder;
+}

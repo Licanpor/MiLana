@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
-  <title>Panel</title>
+  <link rel="stylesheet" href="../css/boardsMenu.css">
+  <title>Retos</title>
 </head>
 <body>
   <header >
@@ -28,29 +28,46 @@
     </nav>
   </header>
   <div class="row title">
-		<img class="sheep-mobile" src="../assets/images/logo-rosa.png" alt="">
-      <p>PANEL DE CONTROL</p>
+    <img class="sheep-mobile" src="../assets/images/logo-rosa.png" alt="">
+    <p>RETOS</p>
   </div>
-  <div id="profileTop" class="row">
-    <div class="profile">
-      <img src="../assets/icons/profile.png" alt="">
-    </div>
-    <div class="name">
-      <p>Olga González</p>
-    </div>
+  <div class="container content-challenge">
+    <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">done</i>
+      <span class="title">Registra tus gastos</span>
+      <p>por 7 días</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">done</i>
+      <p>por 15 días </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">clear</i>
+      <span class="title">Haz un ahorradito</span>
+      <p>Por 8 semanas</p>
+      <a href="#modal1" class="secondary-content modal-trigger"><i class="material-icons">chevron_right</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">clear</i>
+      <p>Por 16 semanas</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">clear</i>
+      <span class="title">Tandas</span>
+      <p>Arma una tanda</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">clear</i>
+      <p>Entrale a una tanda</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">chevron_right</i></a>
+    </li>
+  </ul>
   </div>
-  <div class="row">
-    <input class="money" type="text" name="" value="" placeholder="$">
-  </div>
-  <div class="panel-comp">
-    <div class="comp container">
-      <a href="../views/cashFlow.html"><img src="../assets/icons/caja.png" alt=""></a>
-      <a href="../views/savings.html"><img src="../assets/icons/savings-icon.png" alt=""></a>
-      <a href="#"><img src="../assets/icons/tanda.png" alt=""></a>
-      <a href="#"><img src="../assets/icons/presupuesto.png" alt=""></a>
-    </div>
-  </div>
-
   <footer class="page-footer pink darken-2">
          <div class="container">
            <div class="row">
@@ -90,6 +107,30 @@
 		<img src="../assets/icons/profile-icon.png" alt="Perfil">
 	</a>
 </div>
+</div>
+<!--Modal-->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="title-modal">
+        <h4>Haz un ahorradito</h4>
+      </div>
+      <div class="container text-modal">
+        <p>Olga, si registras tus gastos diarios por <strong> 7 días</strong> recibirás cupones
+        para tus comercios favoritos. <br>
+        ¿Le entras?</p>
+        <img class="sheep-modal" src="../assets/images/sheep.png" alt="">
+      </div>
+      <div class="modal-footer">
+        <a href="../views/dashboard.html" class="modal-close waves-effect waves-green btn-flat">¡Le entro!</a>
+      </div>
+      </div>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function(){
+       M.AutoInit();
+      });
+    </script>
+<script src="../js/inizialization.js"></script>
 </body>
 </html>
