@@ -13,6 +13,11 @@ a {
 div.title{
 	background-color:  #4dd0e1;
 	width: 100%;
+	padding-bottom: 0;
+}
+
+div.row.title{
+	padding-bottom: 0;
 }
 
 div.title p{
