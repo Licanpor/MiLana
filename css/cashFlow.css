@@ -6,18 +6,17 @@
 	justify-content: space-evenly;
 	flex-direction: column;
 	text-align: center;
-	margin-top: 0;
+	margin-top: 9rem;
 }
 .current_date {
 	color: #ce4364;
 	font-weight: bolder;
 }
-.input_balance span {
-	width: 60%;
-	margin: 0 auto;
-	border: 2px solid#4dd0e1;
+.input_balance {
+	border: 2px solid #c2185b;
 	border-radius: 1rem;
-	padding: 3rem;
+	padding: 1rem;
+	margin: 0 auto;
 	font-size: 3rem;
 }
 
@@ -32,8 +31,8 @@
 
 .cashFlow-expenses a{
 	display: block;
-	width: 8rem;
-	height: 8rem;
+	width: 6rem;
+	height: 6rem;
 	margin: 1.5rem;
 }
 
@@ -43,8 +42,8 @@
 .cashFlow-expenses .expenses_icon_wrapper {
 	border: 0.3rem solid #08b2e3;
 	border-radius: 50%;
-	width: 8rem;
-	height: 8rem;
+	width: 6rem;
+	height: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -52,6 +51,6 @@
 
 @media only screen and (max-width: 600px) {
 	#cashFlow {
-		margin-top: 0;
+		margin-top: 6rem;
 	}
 }
