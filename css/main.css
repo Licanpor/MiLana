@@ -1,8 +1,14 @@
 html {
 	font-size: 10px;
 	font-family: 'Roboto', 'Montserrat', sans-serif;
+	overflow-x: hidden;
 }
-
+div {
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+}
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
@@ -14,6 +20,11 @@ div.title{
 	background-color:  #4dd0e1;
 	width: 100%;
 	padding-bottom: 0;
+	height: 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
 }
 
 div.row.title{
@@ -22,9 +33,9 @@ div.row.title{
 
 div.title p{
 	color: white;
-	font-size: bolder;
 	margin-left: 10%;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 div.title p, div.title img{
