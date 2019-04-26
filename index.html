@@ -31,7 +31,7 @@
   <title>MiLana</title>
 </head>
 <body>
-  <header >
+  <header>
     <nav class="indigo darken-4" >
 			<div class="nav-wrapper container ">
 				<a href="index.html" class="brand-logo"><img class="logo-nav" src="assets/images/logo-rosa.png" alt=""></a>
@@ -55,16 +55,19 @@
         <input  class="login-inp" type="text" name="" value="">
       </div>
       <div >
-        <p>Password</p>
+        <p>Constraseña</p>
         <input class="login-inp" type="text" name="" value="">
       </div>
       <p class="login-text">INGRESA CON </p>
-      <a href="views/dashboard.html"><img src="assets/facebook.png" alt=""></a>
+      <img id="authFB" src="assets/facebook.png" alt="">
+      <!--- <a href="views/dashboard.html"><img src="assets/facebook.png" alt=""></a> -->
   </div>
   </div>
   <div class="info-home">
     <div class="container info">
 			<h1>MiLana tu consejera financiera</h1>
+      <p class="login-text"> O INGRESA CON </p>
+      <img id="authFB" src="assets/facebook.png" alt="FB">
     </div>
 		<div class="content-icon">
 			<div class="">
@@ -88,59 +91,64 @@
 		</div>
   </div>
 
-  <footer class="page-footer pink darken-2">
-         <div class="container">
-           <div class="row">
-             <div class="col l6 s12">
-              <ul id="socialMedia">
-                <img src="assets/icons/social1.png" alt="">
-                <img src="assets/icons/social2.png" alt="">
-                <img src="assets/icons/social3.png" alt="">
-              </ul>
-             </div>
-             <div class="col l4 offset-l2 s12 links-footer">
-               <ul>
-                 <li><a class="grey-text text-lighten-3" href="#!">SALDAZO</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#!">CITIBANAMEX</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#!">CONSEJOS</a></li>
-               </ul>
-             </div>
-           </div>
-         </div>
-         <div class="footer-copyright">
-           <div class="container">
-           © 2019 MiLana
-           </div>
-         </div>
-  </footer>
+<footer class="page-footer pink darken-2">
+ <div class="container">
+   <div class="row">
+     <div class="col l6 s12">
+      <ul id="socialMedia">
+        <img src="assets/icons/social1.png" alt="">
+        <img src="assets/icons/social2.png" alt="">
+        <img src="assets/icons/social3.png" alt="">
+      </ul>
+     </div>
+     <div class="col l4 offset-l2 s12 links-footer">
+       <ul>
+         <li><a class="grey-text text-lighten-3" href="#!">SALDAZO</a></li>
+         <li><a class="grey-text text-lighten-3" href="#!">CITIBANAMEX</a></li>
+         <li><a class="grey-text text-lighten-3" href="#!">CONSEJOS</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ <div class="footer-copyright">
+   <div class="container">
+   © 2019 MiLana
+   </div>
+ </div>
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    M.AutoInit();
+  });
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCo7lSPR1RtMDEWVnJdyox0CliJCM6p330",
+    authDomain: "facebooklogin-389a7.firebaseapp.com",
+    databaseURL: "https://facebooklogin-389a7.firebaseio.com",
+    projectId: "facebooklogin-389a7",
+    storageBucket: "facebooklogin-389a7.appspot.com",
+    messagingSenderId: "217870186747"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="js/autentication.js"></script>
 <script type="text/javascript">
-	if ("serviceWorker" in navigator) {
-		if (navigator.serviceWorker.controller) {
-			console.log("[PWA Builder] active service worker found, no need to register");
-		} else {
-			// Register the service worker
-			navigator.serviceWorker
-				.register("pwabuilder-sw.js", {
-					scope: "./"
-				})
-				.then(function (reg) {
-					console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
-				});
-		}
+if ("serviceWorker" in navigator) {
+	if (navigator.serviceWorker.controller) {
+		console.log("[PWA Builder] active service worker found, no need to register");
+	} else {
+		// Register the service worker
+		navigator.serviceWorker
+			.register("pwabuilder-sw.js", {
+				scope: "./"
+			})
+			.then(function (reg) {
+				console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+			});
 	}
-	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyCo7lSPR1RtMDEWVnJdyox0CliJCM6p330",
-		authDomain: "facebooklogin-389a7.firebaseapp.com",
-		databaseURL: "https://facebooklogin-389a7.firebaseio.com",
-		projectId: "facebooklogin-389a7",
-		storageBucket: "facebooklogin-389a7.appspot.com",
-		messagingSenderId: "217870186747"
-	};
-	firebase.initializeApp(config);
+}
 </script>
 </body>
 </html>
