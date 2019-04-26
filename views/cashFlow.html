@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900" rel="stylesheet">
 	<!-- css -->
 	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/cashFlow.css">
 	<title>Flujo de Caja</title>
 </head>
@@ -18,13 +19,12 @@
 <div id="savings_modal" class="modal">
 	<div class="modal-content">
 		<h3>Ahorro</h3>
-		<input type="number" placeholder="¿Cuánto has gastado?">
+		<input id="spending" type="number" placeholder="¿Cuánto has gastado?">
 	</div>
 	<div class="modal-footer">
 		<a href="#!" class="modal-close waves-effect btn-flat"><h4>¡Listo!</h4></a>
 	</div>
 </div>
-
 <div id="food_modal" class="modal">
 	<div class="modal-content">
 		<h3>Alimentación</h3>
@@ -62,11 +62,26 @@
 	</div>
 </div>
 <!--/modales-->
-<div id="cashFlow">
-	<h3>TU SALDO</h3>
+<header >
+	<nav class="indigo darken-4" >
+	<div class="nav-wrapper container ">
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><a href="challenges_board.html">RETOS</a></li>
+			<li><a href="awards_board.html">PREMIOS</a></li>
+			<li><a href="tips.html">CONSEJOS</a></li>
+			<li><a href="dashboard.html"><i class="medium material-icons">account_circle</i></a></li>
+		</ul>
+	</div>
+	</nav>
+</header>
+<div class="row title">
+	<a href="../views/dashboard.html"><img class="sheep-mobile" src="../assets/images/logo-rosa.png" alt=""></a>
+	<p>CAJA DE FLUJO</p>
+</div>
+<div id="cashFlow"class="panel-container">
 	<h5 class="current_date"></h5>
 	<div class="input_balance">
-		<input type="number" placeholder="  $ 1500.00">
+		<span id="balanceCash" class="balance">$500</span>
 	</div>
 	<div class="cashFlow-expenses">
 		<a href="#savings_modal" class="waves-effect waves-light modal-trigger">
@@ -74,33 +89,58 @@
 				<img src="../assets/icons/savings-icon.png" alt="Ahorro">
 			</div>
 		</a>
-		<a href="#food_modal">
+		<a href="#food_modal" class="waves-effect waves-light modal-trigger"">
 			<div class="expenses_icon_wrapper">
 				<img src="../assets/icons/food-icon.png" alt="Alimentos">
 			</div>
 		</a>
-		<a href="#transport_modal">
+		<a href="#transport_modal" class="waves-effect waves-light modal-trigger">
 			<div class="expenses_icon_wrapper">
 				<img src="../assets/icons/transport-icon.png" alt="Transporte">
 			</div>
 		</a>
-		<a href="#services_modal">
+		<a href="#services_modal" class="waves-effect waves-light modal-trigger">
 			<div class="expenses_icon_wrapper">
 				<img src="../assets/icons/services-icon.png" alt="Servicios">
 			</div>
 		</a>
-		<a href="#entertainment_modal">
+		<a href="#entertainment_modal" class="waves-effect waves-light modal-trigger" >
 			<div class="expenses_icon_wrapper">
 				<img src="../assets/icons/entertainment-icon.png" alt="Diversión">
 			</div>
 		</a>
-		<a href="#">
+		<a href="#" class="waves-effect waves-light modal-trigger">
 			<div class="expenses_icon_wrapper">
 				<img src="../assets/icons/others-icon.png" alt="Otros">
 			</div>
 		</a>
 	</div>
 </div>
+<footer class="page-footer pink darken-2">
+ <div class="container">
+	 <div class="row">
+		 <div class="col l6 s12">
+			<ul id="socialMedia">
+				<img src="../assets/icons/social1.png" alt="">
+				<img src="../assets/icons/social2.png" alt="">
+				<img src="../assets/icons/social3.png" alt="">
+			</ul>
+		 </div>
+		 <div class="col l4 offset-l2 s12 links-footer">
+			 <ul>
+				 <li><a class="grey-text text-lighten-3" href="#!">SALDAZO</a></li>
+				 <li><a class="grey-text text-lighten-3" href="#!">CITIBANAMEX</a></li>
+				 <li><a class="grey-text text-lighten-3" href="#!">CONSEJOS</a></li>
+			 </ul>
+		 </div>
+	 </div>
+ </div>
+ <div class="footer-copyright">
+	 <div class="container">
+	 © 2019 MiLana
+	 </div>
+ </div>
+</footer>
 <div id="mobile-menu">
 	<a href="../views/challenges_board.html">
 		<img src="../assets/icons/challenges-icon.png" alt="Retos">

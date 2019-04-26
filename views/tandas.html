@@ -8,16 +8,35 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<!-- css -->
 	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/tandas.css">
 	<title>Tandas</title>
 </head>
 <body>
+	<header >
+    <nav class="indigo darken-4" >
+    <div class="nav-wrapper container ">
+      <a href="index.html" class="brand-logo"><img class="logo-nav" src="../assets/images/logo-rosa.png" alt=""></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="challenges_board.html">RETOS</a></li>
+        <li><a href="awards_board.html">PREMIOS</a></li>
+        <li><a href="tips.html">CONSEJOS</a></li>
+        <li><a href="dashboard.html"><i class="medium material-icons">account_circle</i></a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+  <div class="row title">
+    <a href="../views/dashboard.html"> <img class="sheep-mobile" src="../assets/images/logo-rosa.png" alt="">    </a>
+    <p>Tandas</p>
+  </div>
 <div id="tandas">
-	<h3>Tandas</h3>
 	<div class="tanda_type">
-		<h4>Mis Tandas</h4>
+		<h4>Mis tandas</h4>
 		<div class="tanda_preview">
 			<div class="img_wrapper">
 				<img src="../assets/icons/woman-icon.png" alt="">
@@ -47,8 +66,8 @@
 		</div>
 	</div>
 	<div class="cta_wrapper">
-		<a href="#!"><p>Crear</p></a>
-		<a href="#!"><p>Entrarle</p></a>
+		<a href="#crear" class="modal-trigger"><p>Crear</p></a>
+		<a href="#entrarle" class="modal-trigger"><p>Entrarle</p></a>
 	</div>
 </div>
 <div id="mobile-menu">
@@ -65,7 +84,56 @@
 		<img src="../assets/icons/profile-icon.png" alt="Perfil">
 	</a>
 </div>
+<!--Modal-->
+<div id="crear" class="modal">
+    <div class="modal-content">
+      <div class="title-modal">
+        <h5>Empieza una nueva tanda</h5>
+			</div>
+      <div class="container text-modal">
+				<p>Puedes invitar a tus amigos o esperar que otros usuearios soliciten unirse.</p>
+				<ul class="collection with-header">
+        <li class="collection-header"><h5>Invita</h5></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">add_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">add_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">senadd_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">senadd_circle</i></a></div></li>
+      </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="" class="modal-close waves-effect waves-green btn-flat">¡Le entro!</a>
+      </div>
+      </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<div id="entrarle" class="modal">
+    <div class="modal-content">
+      <div class="title-modal">
+        <h5>Unete a una tanda</h5>
+			</div>
+      <div class="container text-modal">
+				<p>Puedes solicitar unirte a una tanda que se ajuste a tus necesidades.</p>
+				<ul class="collection with-header">
+        <li class="collection-header"><h5>Invita</h5></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">add_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">add_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">senadd_circle</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">senadd_circle</i></a></div></li>
+      </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="" class="modal-close waves-effect waves-green btn-flat">¡Le entro!</a>
+      </div>
+      </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script src="../js/tandas.js"></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function(){
+       M.AutoInit();
+      });
+    </script>
+<script src="../js/inizialization.js"></script>
 </body>
 </html>
