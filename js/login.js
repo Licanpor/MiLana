@@ -7,7 +7,6 @@ function loginFb(){
 	firebase.auth().signInWithPopup(provider).then(function(result) {
 		var token = result.credential.accessToken;
 		var user = result.user;
-		alert(user)
 		window.location = './views/dashboard.html';
 		window.setTimeout(M.toast(`¡¡Hola, ${result.user.displayName} !!`, 3000), 1500)
 		userPic.style.backgroundImage = result.user.photoURL
