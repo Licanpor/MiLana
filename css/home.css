@@ -34,6 +34,9 @@ div.login{
   font-weight: bolder;
 }
 
+div.login p{
+  margin-bottom: .5rem;
+}
 div.login h1{
   font-weight: bolder;
   text-align: center;

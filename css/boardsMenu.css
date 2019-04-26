@@ -1,11 +1,17 @@
 div.content-challenge{
   padding-bottom: 5rem;
+  margin-top: 6rem;
 }
 
 div.content-challenge p{
   font-size: 1.5rem;
   padding-top: .5rem;
 }
+
+.cont-tips {
+  margin-top: 6rem;
+}
+
 
 span.title{
   color: #c2185b;
@@ -39,6 +45,7 @@ div.modal-footer a{
 }
 
 div.cont-awards{
+  margin-top: 6rem;
   font-size: 1.8rem;
   font-weight: bolder;
   padding-bottom: 5rem;
@@ -67,6 +74,7 @@ img.oxxo{
 
 div.cont-saldazo{
   text-align: center;
+  margin-top: 7rem;
 }
 
 div.saldazo-folio{
@@ -95,12 +103,6 @@ div.card-image img{
   width: 20%;
 }
 
-div.card-content{
-  padding-top: 0!important;
-  padding-bottom: 0!important;
-}
-
-
 @media (min-width: 701px){
   img.oxxo{
     width: 30%;
@@ -111,9 +113,9 @@ div.card-content{
   div.card-content h5{
   font-size: 3rem;
   }
-
-@media (min-width: 701px){
-
+  div.content-challenge, div.cont-awards, .cont-tips {
+    margin-top: 15rem;
+  }
   img.oxxo{
     width: 30%;
   }
