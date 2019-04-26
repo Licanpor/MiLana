@@ -124,3 +124,12 @@ div.icon1 img{
     z-index: 50;
   }
 }
+
+a#btn-ingr{
+  background-color: #c2185b ;
+  margin-top: .5rem;
+}
+
+a{
+  cursor: pointer;
+}
